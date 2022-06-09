@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .body-bg {
+            background-color: #557B83;
+        }
+    </style>
+</head>
+<body class="body-bg min-h-screen pt-28 md:pt-28 pb-6 px-2 md:px-0" style="font-family:'Lato',sans-serif;">
+    <main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-3xl shadow-2xl relative">
+        <a href="#" class="absolute inset-x-24 -top-28 h-48 w-48 sm:inset-x-40 -top-28 h-52 w-52">
+            <img src="/img/LogoArenaCenter.png" class="rounded-full bg-green-400 h-52 w-52 relative border-8 border-white">
+        </a>
+        <section>
+            <h3 class="font-bold text-2xl flex justify-center pt-20">Bienvenido a 'Empresa'</h3>
+            <p class="text-gray-600 flex justify-center">Ingresa tu cuenta</p>
+        </section>
+        <section class="mt-10">
+            <form class="flex flex-col" method="POST" action="#">
+                <div class="mb-6 pt-3 rounded">
+                    <input class="appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Correo electronico">
+                </div>
+                <div class="mb-6 pt-3 ">
+                    <input class="sappearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Contraseña">
+                </div>
+                <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit">Entrar</button>
+                <div class="flex justify-end">
+                    <a href="#" class="text-sm text-blue-400 pt-2 hover:text-blue-500 hover:underline mb-2">¿Has olvidado la contraseña?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="max-w-lg mx-auto flex justify-center text-white">
+        <a href="#" class="hover:underline">Contacto</a>
+        <span class="mx-3">•</span>
+        <a href="#" class="hover:underline">Privacidad</a>
+    </footer>
+</body>
+</html>
